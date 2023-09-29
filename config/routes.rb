@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # 表示するページを指定する
   get 'static_pages/home'
   get 'static_pages/help'
+  get 'static_pages/about'
   # ルートドメインにアクセスしたとき
   # 表示するページを指定する
   root "application#hello"
