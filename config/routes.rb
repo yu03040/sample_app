@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   get "static_pages/contact"
   # ルートドメインにアクセスしたとき
   # 表示するページを指定する
-  root "application#hello"
+  root "static_pages#home"
 end
