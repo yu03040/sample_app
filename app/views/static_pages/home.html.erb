@@ -1,20 +1,9 @@
-<!-- これから HTML5 というバージョンで html 文を書くよという宣言 -->
-<!DOCTYPE html>
-<!-- html タグは html ページであることを宣言するタグ -->
-<html>
-  <!-- head タグは html のメタ情報（検索エンジンやブラウザなどに WEB サイトの情報を伝えるための HTML コード） -->
-  <head>
-    <!-- title タグはページタイトルをつけるタグ -->
-    <title>Home | Ruby on Rails Tutorial Sample App</title>
-  </head>
-  <!-- body タグは HTML ページの本体 -->
-  <body>
-    <h1>Sample App</h1>
-    <p>
-      This is the home page for the
-      <!-- リンクを設定する -->
-      <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
-      sample application.
-    </p>
-  </body>
-</html>
+<!-- :title というシンボルに対して、"Home"という文字列を提供 -->
+<% provide(:title, "Home") %>
+<h1>Sample App</h1>
+<p>
+  This is the home page for the
+  <!-- リンクを設定する -->
+  <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
+  sample application.
+</p>
