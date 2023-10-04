@@ -1,16 +1,18 @@
-<!DOCTYPE html>
+<!-- application.html.erb は HTMLやHEADタグなどの共通レイアウト -->
+<!-- アクション名.html.erb は BODYタグ内の個別レイアウト -->
+<!doctype html>
 <html>
   <head>
-    <title>SampleApp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- 文字コードを utf-8 に設定 -->
+    <meta charset="utf-8" />
+    <%= csrf_meta_tags %> <%= csp_meta_tag %> <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %> <%=
+    javascript_importmap_tags %>
   </head>
 
   <body>
+    <!-- ここの yield は URL に基づき表示する -->
     <%= yield %>
   </body>
 </html>
