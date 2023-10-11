@@ -21,6 +21,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
     get static_pages_home_url # StaticPagesController の home アクションを呼び出し、その結果をテスト
     assert_response :success # ページが正常にロードされたことを確認
+    assert_select "title", "Ruby on Rails Tutorial Sample App" # ページのタイトルが指定されたテキストであることを確認
   end
 
   # help アクションが正しく動作することを確認
