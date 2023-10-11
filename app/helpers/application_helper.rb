@@ -1,4 +1,4 @@
-module ApplicationHelper
+module ApplicationHelper # モジュールはメソッドを格納できるもの
   # ページごとの完全なタイトルを返す
   def full_title(page_title = "")
     base_title = "Ruby on Rails Tutorial Sample App"
