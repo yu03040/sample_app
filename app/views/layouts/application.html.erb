@@ -14,37 +14,9 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
-    <!-- header タグはサイトのヘッダー
-         class 属性は、Bootstrap フレームワークのクラスを使用する
-         また、ページのヘッダーをスタイリッシュな固定ナビゲーションバーにスタイリング
-         navbar はナビゲーションバーを表示
-         navbar-fixed-top はナビゲーションバーをページトップに固定
-         navbar-inverse ナビゲーションバーの背景色を暗い色に設定し、テキストを明るい色に設定するスタイルを適用定
-      -->
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <!-- div タグは css と合わせてスタイル・レイアウトを調整できる
-           container はコンテンツを入れる入れ物 
-        -->
-      <div class="container">
-        <!-- "sample app"というリンクを生成し、id属性を指定
-             このリンクは通常、ロゴとして使用 
-          -->
-        <%= link_to "sample app", '#', id: "logo" %>
-        <!-- nav タグはメニューバーなどのナビゲーション関係のリンクを集めた箇所を示す -->
-        <nav>
-          <!-- ul タグと li タグは順序なしリスト 
-               nav はメニュー項目を水平に配置
-               navbar-nav はメニュー項目を含むリスト要素 (<ul>) に適用され、適切なスタイルにする
-               navbar-right はメニュー項目を右寄せに配置する 
-            -->
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   '#' %></li>
-            <li><%= link_to "Help",   '#' %></li>
-            <li><%= link_to "Log in", '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <!-- これはビュー内で他のビューファイルを部分的にレンダリングするためのコード -->
+    <%= render 'layouts/header' %>
+    <!-- HTML の div タグで「container」という大きな箱を作る -->
     <div class="container">
       <!-- ここの yield は URL に基づき表示する -->
       <%= yield %>
