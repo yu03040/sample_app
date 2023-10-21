@@ -1,0 +1,95 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+/* universal */
+
+/* ウェブページの本体 */
+body {
+  /* 上部に60ピクセルの余白（内部パディング）を追加 */
+  padding-top: 60px;
+}
+
+/* セクション要素にスタイルを適用 */
+section {
+  /* セクション内のコンテンツがセクション内でオーバーフローした場合にスクロールバーを表示する */
+  overflow: auto;
+}
+
+/* テキストエリア要素にスタイルを適用 */
+textarea {
+  /* テキストエリアのリサイズが垂直方向にのみ許可される */
+  resize: vertical;
+}
+
+/* 水平方向の中央揃えを適用するためのスタイル */
+.center {
+  /* テキスト（テキスト要素内のコンテンツ）の水平方向の配置を指定する */
+  text-align: center;
+}
+
+/* .center クラスが適用された要素内の h1 要素に関するスタイルを指定 */
+.center h1 {
+  /* h1 要素の下部に 10 ピクセルのマージンを追加するスタイル */
+  margin-bottom: 10px;
+}
+
+/* typography */
+
+/* HTML の見出し要素（h1 から h6）に対して、行の高さ（line-height）を 1 に設定 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+/* h1 要素に対するスタイルを指定 */
+h1 {
+  font-size: 3em; /* フォントサイズ 3 倍 */
+  letter-spacing: -2px; /* 文字間隔を-2ピクセルに設定, 負の値は文字を近づける */
+  margin-bottom: 30px; /* h1の下部に30ピクセルのマージンを追加 */
+  text-align: center; /* h1のテキストを中央揃え */
+}
+
+/* h2 要素に対するスタイルを指定 */
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal; /* テキストの太さを通常の太さに設定 */
+  color: #777; /* テキストの色を灰色（#777）に設定 */
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* header */
+
+/* HTML 内で id="logo" と設定されている要素（通常はロゴ要素）にこのスタイルを適用 */
+#logo {
+  float: left; /* float プロパティによる横並びを実現、要素を左寄せにする */
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase; /* テキストを大文字に変換 */
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+/* logo セレクタにホバー（マウスを重ねた状態）した場合に適用されるスタイルを指定 */
+#logo:hover {
+  color: #fff;
+  text-decoration: none; /* ホバー時にテキストデコレーションを無効 */
+}
+
+/*
+    img {
+    display: none;
+    }
+*/
