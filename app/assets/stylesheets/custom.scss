@@ -60,7 +60,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal; /* テキストの太さを通常の太さに設定 */
-  color: #777; /* テキストの色を灰色（#777）に設定 */
+  color: $gray-light; /* テキストの色を灰色（#777）に設定 */
 }
 
 p {
@@ -101,32 +101,32 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea; /* フッターの上部に薄い水平の線を表示 */
-  color: #777;
-}
+  color: $gray-light;
 
-/* フッター内のリンク要素に適用されるスタイルを定義 */
-footer a {
-  color: #555;
-}
+  /* フッター内のリンク要素に適用されるスタイルを定義 */
+  a {
+    color: #555;
+  }
 
-/* ホバー（マウスが要素の上にあるとき）時のリンクのスタイルを定義 */
-footer a:hover {
-  color: #222;
-}
+  /* ホバー（マウスが要素の上にあるとき）時のリンクのスタイルを定義 */
+  a:hover {
+    color: #222;
+  }
 
-/* フッター内の <small> 要素に対してスタイルを定義, <small> はテキストを小さく表示するために使用 */
-footer small {
-  float: left;
-}
+  /* フッター内の <small> 要素に対してスタイルを定義, <small> はテキストを小さく表示するために使用 */
+  small {
+    float: left;
+  }
 
-/* フッター内の無順序リスト（<ul>要素）に対してスタイルを定義 */
-footer ul {
-  float: right;
-  list-style: none; /* 無順序リストの箇条書き記号を非表示 */
-}
+  /* フッター内の無順序リスト（<ul>要素）に対してスタイルを定義 */
+  ul {
+    float: right;
+    list-style: none; /* 無順序リストの箇条書き記号を非表示 */
 
-/* 無順序リスト内の各リストアイテム（<li>要素）に対してスタイルを定義 */
-footer ul li {
-  float: left;
-  margin-left: 15px;
+    /* 無順序リスト内の各リストアイテム（<li>要素）に対してスタイルを定義 */
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
 }
