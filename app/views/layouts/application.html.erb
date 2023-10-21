@@ -8,13 +8,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!-- 文字コードを utf-8 に設定 -->
     <meta charset="utf-8" />
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <!-- これはビュー内で他のビューファイルを部分的にレンダリングするためのコード -->
+    <%= render 'layouts/rails_default' %>
   </head>
   <body>
-    <!-- これはビュー内で他のビューファイルを部分的にレンダリングするためのコード -->
     <%= render 'layouts/header' %>
     <!-- HTML の div タグで「container」という大きな箱を作る -->
     <div class="container">
