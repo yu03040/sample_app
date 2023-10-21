@@ -93,3 +93,40 @@ p {
     display: none;
     }
 */
+
+/* footer */
+
+/* HTML 内で <footer> 要素に対応し、そのスタイルを定義 */
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea; /* フッターの上部に薄い水平の線を表示 */
+  color: #777;
+}
+
+/* フッター内のリンク要素に適用されるスタイルを定義 */
+footer a {
+  color: #555;
+}
+
+/* ホバー（マウスが要素の上にあるとき）時のリンクのスタイルを定義 */
+footer a:hover {
+  color: #222;
+}
+
+/* フッター内の <small> 要素に対してスタイルを定義, <small> はテキストを小さく表示するために使用 */
+footer small {
+  float: left;
+}
+
+/* フッター内の無順序リスト（<ul>要素）に対してスタイルを定義 */
+footer ul {
+  float: right;
+  list-style: none; /* 無順序リストの箇条書き記号を非表示 */
+}
+
+/* 無順序リスト内の各リストアイテム（<li>要素）に対してスタイルを定義 */
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
