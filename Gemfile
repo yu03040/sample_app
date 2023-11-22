@@ -68,6 +68,12 @@ group :development do
   gem 'syntax_tree-rbs'
   gem 'web-console'
 
+  gem 'rubocop-performance', require: false # 拡張機能
+
+  gem 'rubocop-rails', require: false # 拡張機能
+
+  gem 'rubocop-rspec', require: false # 拡張機能
+
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
