@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'test_helper'
 
 # レイアウトに関するテストを実行するために使用されるクラス
@@ -17,5 +15,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select 'a[href=?]', contact_path
     get contact_path
     assert_select 'title', full_title('Contact')
+    get signup_path
+    assert_select "title", full_title("Sign up")
   end
 end
