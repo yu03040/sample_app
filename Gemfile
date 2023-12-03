@@ -51,6 +51,7 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "guard-rspec", require: false
 end
 
 group :development do
@@ -62,6 +63,8 @@ group :development do
   gem "syntax_tree-haml"
   gem "syntax_tree-rbs"
   gem "htmlbeautifier"
+  gem "minitest-reporters"
+  gem "guard-minitest"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
