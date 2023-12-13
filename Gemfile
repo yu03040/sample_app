@@ -97,3 +97,7 @@ gem 'bootstrap-sass', '3.4.1'
 gem 'rubocop'
 gem 'ruby-lsp'
 gem 'bcrypt'
+
+group :production do
+    gem "pg", "1.3.5"
+  end
